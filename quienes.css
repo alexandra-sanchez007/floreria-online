@@ -1,0 +1,246 @@
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #fff0f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 15px;
+}
+
+.encabezado {
+  background-color:  #ec008c;
+  color: #fff;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.encabezado h1 {
+  font-size: 2.5rem;
+  margin-bottom: 5px;
+}
+
+.encabezado p {
+  font-style: italic;
+}
+
+section {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+/* Contenedor principal */
+.intro {
+  display: flex;
+  flex-direction: column; /* Todo se organizará en columna */
+  align-items: center; /* Centra el contenido */
+  gap: 20px; /* Espacio entre las imágenes y el texto */
+  padding: 20px;
+  margin: 10 auto;
+}
+
+.imagen-con-caption {
+  display: flex;
+  flex-direction: column; /* Se mantiene en columna */
+  align-items: center; /* Centra las imágenes */
+}
+
+.imagenes {
+  display: flex; /* Flexbox para las imágenes */
+  flex-direction: row; /* Las imágenes estarán en fila, una al lado de la otra */
+  gap: 10px; /* Espacio entre las imágenes */
+  justify-content: center; /* Centra las imágenes en el contenedor */
+}
+
+.imagenes img {
+  width: 250px; /* Tamaño reducido de las imágenes */
+  height: auto; /* Mantiene la proporción de las imágenes */
+  border-radius: 20px; /* Redondea las esquinas */
+}
+
+figcaption {
+  text-align: center; /* Centra el texto "Tienda Oficial" */
+  font-size: 1rem; /* Ajusta el tamaño del texto */
+  margin-top: 10px; /* Espacio entre las imágenes y el texto */
+}
+
+.intro-texto {
+  max-width: 500px; /* Limita el tamaño del texto */
+  text-align: center; /* Centra el texto */
+}
+
+.sobre-nosotros .contenido,
+.nuestro-inicio {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  gap: 20px;
+}
+
+.sobre-nosotros img,
+.nuestro-inicio img {
+  width: 50%; 
+  height: auto;
+  border-radius: 20px;
+}
+
+.que-hacemos ul {
+  list-style: none;
+  padding: 0;
+}
+
+.que-hacemos ul li::before {
+  content: "\2713\0020";
+  color: #7e4f4f;
+  font-weight: bold;
+}
+
+
+
+.mision-vision {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.mision-vision .bloque {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff5f5;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.imagen-con-caption {
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  background-color: #fff;
+  margin-top: 15px;
+  max-width: 100%;
+  width: 180%;
+}
+
+.imagen-con-caption img {
+  max-width: 70%;
+  height: auto;
+  display: block;
+  margin: auto;
+  padding-top:10px;
+  border-radius: 20px;
+}
+
+.imagen-con-caption figcaption {
+  font-size: 0.9rem;
+  color: #555;
+  padding: 8px;
+  background-color: #f9f9f9;
+  
+}
+
+
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+  
+}
+
+
+.imagenes-finales {
+  display: none;
+  
+}
+
+.cierre {
+  text-align: center;
+}
+
+.cierre img {
+  margin-top: 10px;
+  max-width: 20%;
+  border-radius: 15px;
+}
+
+footer {
+  background-color:  #ec008c;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  margin-top: 40px;
+}
+
+
+@media (max-width: 768px) {
+  .mision-vision {
+    grid-template-columns: 1fr;
+  }
+
+  .intro {
+    flex-direction: column; 
+    text-align: center;
+  }
+
+  .intro img {
+    max-width: 100%; 
+    height: auto;
+  }
+
+  .intro .intro-texto {
+    min-width: 100%;
+  }
+}
+
+.typewriter {
+  overflow: hidden;
+  white-space: nowrap; 
+  margin: 0 auto; 
+  letter-spacing: .15em; 
+  animation: typing 9.5s steps(30, end), blink-caret .75s step-end infinite;
+}
+
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+.boton-regresar-contenedor {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.boton-regresar {
+  background: linear-gradient(to right, #ec008c, #d81b60);
+  color: white;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1rem;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 40px;
+  box-shadow: 0 8px 20px rgba(236, 0, 140, 0.4);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.boton-regresar:hover {
+  background: linear-gradient(to right, #d81b60, #ec008c);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(216, 27, 96, 0.5);
+}
+
+
