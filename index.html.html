@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Florería Santa Ana</title>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <h1>Florería Santa Ana</h1>
+  <div class="hexagon-container">
+    <div class="hexagon">
+      <div class="face face-1"><img src="foto1.jpg" alt="Foto 1"></div>
+      <div class="face face-2"><img src="foto2.jpg" alt="Foto 2"></div>
+      <div class="face face-3"><img src="foto3.jpg" alt="Foto 3"></div>
+      <div class="face face-4"><img src="foto4.jpg" alt="Foto 4"></div>
+      <div class="face face-5"><img src="foto5.jpg" alt="Foto 5"></div>
+      <div class="face face-6"><img src="foto6.jpg" alt="Foto 6"></div>
+    </div>
+  </div>
+<div class="botones">
+  <a href="file:///C:/Users/alexa/OneDrive/Escritorio/santaana/p%C3%A1ginas%20principales/p2.html" class="boton1">Acceso</a>
+</div>
+
+	<div class="social">
+		<ul>
+			<li><a href=" https://wa.me/7711168402 " target="_blank" class="icon-whatsapp"></a></li>
+			<li><a href="https://www.facebook.com/share/18q8mLyVS6/" target="_blank" class="icon-Facebook"></a></li>
+			<li><a href="https://www.tiktok.com/@floreria.santa.ana.t?_t=ZS-8wAvj7ECzVy&_r=1" target="_blank" class="icon-tiktok"></a></li>
+			<li><a href="https://www.instagram.com/floreria.santa_ana?igsh=djlxa2lmMTY5bXA2" class="icon-Instagram"></a></li>
+		</ul>
+	</div>
+  <p class="cohaeh-text"><b>COBAEH Tianguistengo</b></p>
+  <footer>
+    <p>&copy; 2025 Florería Santa Ana. Brenda Itzel - Ailyn Alexandra.</p>
+  </footer>
+  <script>
+    const hexagon = document.querySelector('.hexagon');
+    const boton = document.querySelector('.mi-boton');
+    let rotando = true;
+
+    boton.addEventListener('click', () => {
+      if (rotando) {
+        hexagon.style.animationPlayState = 'paused';
+        boton.textContent = 'Reanudar rotación';
+      } else {
+        hexagon.style.animationPlayState = 'running';
+        boton.textContent = 'Detener rotación';
+      }
+      rotando = !rotando;
+    });
+  </script>
+</body>
+</html>
