@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<title>Florería Santa Ana</title>
+		<link rel="stylesheet" href="estilos.css">
+		<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
+	</head>
+	<body>
+    <div id="header">
+        <ul class="nav">
+			<li><a href="file:///C:/Users/alexa/OneDrive/Escritorio/santaana/p%C3%A1ginas%20principales/p1.html">Inicio</a></li>
+
+            <li><a href="file:///C:/Users/alexa/OneDrive/Escritorio/santaana/quien%20es/quien%20es.html">Quienes somos</a></li>
+
+            <li><a href="">Servicios</a>
+                <ul>
+                    <li><a href="file:///C:/Users/alexa/OneDrive/Escritorio/santaana/ramos/Ramos.html">Ramos</a></li>
+                    <li><a href="file:///C:/Users/alexa/OneDrive/Escritorio/santaana/centros%20de%20mesa/centrodemesa.html">Centros de mesa</a></li>
+                    <li><a href="file:///C:/Users/alexa/OneDrive/Escritorio/santaana/Arreglos/arreglos.html">Arreglos florales</a></li>
+                </ul>
+            </li>
+      <li><a href="">Eventos</a>
+				<ul>
+					<li><a href="file:///C:/Users/alexa/OneDrive/Escritorio/santaana/Bautizo/bautizo.html">Bautizo</a></li>
+					<li><a href="file:///C:/Users/alexa/OneDrive/Escritorio/santaana/xv%20a%C3%B1os/xva.html">XV Años</a></li>
+					<li><a href="file:///C:/Users/alexa/OneDrive/Escritorio/santaana/boda/boda.html">Boda</a></li>
+					<li><a href="file:///C:/Users/alexa/OneDrive/Escritorio/santaana/Graduaci%C3%B3n/graduacion.html">Graduación</a></li>
+					<li><a href="file:///C:/Users/alexa/OneDrive/Escritorio/santaana/Coronas%20Funebres/coronas.html">Coronas funebres</a></li>
+					<li><a href="file:///C:/Users/alexa/OneDrive/Escritorio/santaana/Adorno%20de%20fiesta/adorno.html">Adorno de Fiesta</a></li>
+					<li><a href="file:///C:/Users/alexa/OneDrive/Escritorio/santaana/D%C3%ADa%20de%20las%20Madres/diadelasmadres.html">Día de las Madres</a></li>
+				</ul>
+	</li>
+
+        </ul>
+    </div>
+	
+	<div class="imagen">
+		<img src="logo.png" alt="Logo Floreria Santa Ana">
+	</div>
+	
+	<div class="texto_movimiento">
+		<font size=+1><h2 align="center">Florería Santa Ana</h2></font>
+	</div>
+
+
+
+	<div class="social">
+		<ul>
+			<li><a href="https://www.whatsapp.com/" target="_blank" class="icon-whatsapp"></a></li>
+			<li><a href="https://www.facebook.com/share/18q8mLyVS6/" target="_blank" class="icon-Facebook"></a></li>
+			<li><a href="https://www.tiktok.com/@floreria.santa.ana.t?_t=ZS-8wAvj7ECzVy&_r=1" target="_blank" class="icon-tiktok"></a></li>
+			<li><a href="https://www.instagram.com/floreria.santa_ana?igsh=djlxa2lmMTY5bXA2" class="icon-Instagram"></a></li>
+		</ul>
+	</div>
+	
+	 
+  <footer>
+    <p>&copy; 2025 Florería Santa Ana. Brenda Itzel - Ailyn Alexandra.</p>
+
+  </footer>
+
+  <script>
+    const hexagon = document.querySelector('.hexagon');
+    const boton = document.querySelector('.mi-boton');
+    let rotando = true;
+
+    boton.addEventListener('click', () => {
+      if (rotando) {
+        hexagon.style.animationPlayState = 'paused';
+        boton.textContent = 'Reanudar rotación';
+      } else {
+        hexagon.style.animationPlayState = 'running';
+        boton.textContent = 'Detener rotación';
+      }
+      rotando = !rotando;
+    });
+  </script>
+	
+	</body>
+</html>
